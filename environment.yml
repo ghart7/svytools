@@ -1,0 +1,25 @@
+name: svytools-env
+channels:
+  - conda-forge
+  - defaults
+dependencies:
+  - python>=3.10
+  - pip
+
+  # Core dependencies from pyproject.toml
+  - matplotlib>=3.10.0,<3.11.0
+  - numpy>=2.0.0,<2.1.0
+  - pandas>=2.2.0,<2.3.0
+  - scipy>=1.15.0,<1.16.0
+  - seaborn>=0.13.0,<0.14.0
+  - scikit-learn>=1.6.0,<1.7.0
+  - pillow>=11.0.0,<12.0.0
+
+  # Additional dependencies for notebooks
+  - ipykernel>=6.29.0,<6.30.0
+  - ipywidgets>=8.1.0,<8.2.0
+  - ipympl>=0.9.0,<0.10.0
+  - ipython>=8.35.0,<8.37.0
+
+  - pip:
+      - -e .

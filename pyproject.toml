@@ -1,0 +1,50 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "svytools"
+version = "0.1.0"
+description = "General-purpose plotting, data-wrangling, and clustering utilities extracted from the Survey toolkit, with no single-cell (Scanpy/MuData) dependencies."
+authors = [
+  { name = "George Hartoularos (ghart7)", email = "george.hartoularos@surveygenomics.com" }
+]
+readme = "README.md" # Point to your README file
+license = { text = "MIT" } # Or another license like "BSD-3-Clause"
+keywords = ["plotting", "utilities", "clustering", "genomics"]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering :: Visualization",
+]
+requires-python = ">=3.10"
+dependencies = [
+    "matplotlib>=3.10.0,<3.11.0",
+    "numpy>=2.0.0,<2.1.0",
+    "pandas>=2.2.0,<2.3.0",
+    "scipy>=1.15.0,<1.16.0",
+    "seaborn>=0.13.0,<0.14.0",
+    "scikit-learn>=1.6.0,<1.7.0",
+    "pillow>=11.0.0,<12.0.0"
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=8.0", # Your version of pytest
+    "pytest-cov",  # For test coverage reports
+    "pytest-xdist", # For parallel test execution (optional)
+    # Add any other test-specific plugins here
+]
+
+[project.urls]
+"Homepage" = "https://github.com/survey-genomics/svytools"
+"Repository" = "https://github.com/survey-genomics/svytools"
+"Bug Tracker" = "https://github.com/survey-genomics/svytools/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools]
+zip-safe = false
