@@ -9,8 +9,6 @@ It currently provides:
 - `decorate` – reusable plot decoration helpers (`decorate_plot`, plot labels, legends, colorbars)
 - `matrix` – KMeans/hierarchical clustering convenience functions and the `DFClust` class
 
-> **Note:** This package intentionally duplicates code that also lives in the `survey` package. It was created as a temporary "fork" so that ongoing paper-submission notebooks relying on `survey` are not disrupted. Once the submission is complete, the duplicated functions will be removed from `survey` in favor of importing from `svytools`.
-
 ## System Requirements
 
 Tested using Python 3.10+ on macOS (arm64) and Linux (x86_64).
