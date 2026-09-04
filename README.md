@@ -1,4 +1,4 @@
-# Svytools
+# `svytools`
 
 The **svytools** package is a general-purpose toolkit of plotting, data-wrangling, and clustering utilities. It was factored out of the [Survey](https://github.com/survey-genomics/survey) toolkit so it can be installed and imported on its own, without requiring Scanpy, MuData, AnnData, or any other single-cell-specific dependencies.
 
